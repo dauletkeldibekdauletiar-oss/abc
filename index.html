@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script src="script/script.js"></script>
+    <script src="js/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
@@ -9,28 +9,74 @@
     <title>Cup & Cake | Кофейня</title>
 </head>
 <body>
+<div id="sidePanel" class="sidebar">
+    <span class="closebtn" onclick="toggleNav()">×</span>
+    <input type="text" id="sidebarSearch" class="sidebar-search" onkeyup="searchMenu()" placeholder="Поиск напитка...">
+    
+    <a href="index.html" class="home-link">🏠 Главная</a>
+
+    <div class="category-wrapper">
+        <div class="menu-category" onclick="toggleCategory(this)">☕ КОФЕ <span class="arrow">▼</span></div>
+        <div class="submenu">
+            <a href="#">Капучино</a>
+            <a href="#">Латте</a>
+            <a href="#">Американо</a>
+            <a href="#">Эспрессо</a>
+            <a href="#">Флэт Уайт</a>
+            <a href="#">Раф кофе</a>
+        </div>
+    </div>
+
+    <div class="category-wrapper">
+        <div class="menu-category" onclick="toggleCategory(this)">🍵 ЧАЙ И КАКАО <span class="arrow">▼</span></div>
+        <div class="submenu">
+            <a href="#">Чай (черный/зеленый)</a>
+            <a href="#">Фруктовый чай</a>
+            <a href="#">Какао с маршмэллоу</a>
+        </div>
+    </div>
+
+    <div class="category-wrapper">
+        <div class="menu-category" onclick="toggleCategory(this)">🍹 ХОЛОДНОЕ <span class="arrow">▼</span></div>
+        <div class="submenu">
+            <a href="#">Айс Латте</a>
+            <a href="#">Бамблби кофе</a>
+            <a href="#">Домашний лимонад</a>
+        </div>
+    </div>
+</div>
     <header class="header">
+        <span class="open-menu" onclick="toggleNav()">☰</span>
         <h1>Тепло в чашке, радость в кусочке</h1>
     </header>
-
     <main class="main">
       <div class="parent">
-<a href="c.html" class="cofe">
+<a href="#" class="cofe">
     <img src="images/cappuchino.png" alt="Капучино">
     <p>Капучино</p>
 </a>
 
-<a href="l.html" class="cofe">
+<a href="#" class="cofe">
     <img src="images/latte.png" alt="Латте">
     <p>Латте</p>
 </a>
 
-<a href="a.html" class="cofe">
+<a href="#" class="cofe">
     <img src="images/amerika.png" alt="американо">
     <p>Американо</p> 
 </a>
 </div>
     </main>
-
+    
+<footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Дипломный проект. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="c.html">Контакты</a></li>
+                <li><a href="a.html">Политика конфиденциальности</a></li>
+                <li><a href="l.html">Социальные сети</a></li>
+            </ul>
+        </div>
+    </footer> 
 </body>
 </html>
