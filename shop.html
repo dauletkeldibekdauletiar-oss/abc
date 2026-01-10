@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>Меню | Cup & Cake</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="open-menu" style="text-decoration: none;">🏠</a>
+        <h1>Наше Меню</h1>
+    </header>
+
+    <main style="padding-top: 40px; padding-bottom: 120px;">
+        <div class="shop-container">
+            
+            <div class="product-card">
+                <img src="images/cappuchino.png" alt="Капучино">
+                <div class="product-name">Капучино</div>
+                <div class="product-price">250 ₽</div>
+                <button class="add-btn" onclick="addToCart(250)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/latte.png" alt="Латте">
+                <div class="product-name">Латте</div>
+                <div class="product-price">300 ₽</div>
+                <button class="add-btn" onclick="addToCart(300)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/amerika.png" alt="Американо">
+                <div class="product-name">Американо</div>
+                <div class="product-price">180 ₽</div>
+                <button class="add-btn" onclick="addToCart(180)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/tea.png" alt="Чай">
+                <div class="product-name">Чай черный/зеленый</div>
+                <div class="product-price">150 ₽</div>
+                <button class="add-btn" onclick="addToCart(150)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/fruit-tea.png" alt="Фруктовый чай">
+                <div class="product-name">Фруктовый чай</div>
+                <div class="product-price">220 ₽</div>
+                <button class="add-btn" onclick="addToCart(220)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/kakao.png" alt="Какао">
+                <div class="product-name">Какао с маршмэллоу</div>
+                <div class="product-price">280 ₽</div>
+                <button class="add-btn" onclick="addToCart(280)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/ice-latte.png" alt="Айс Латте">
+                <div class="product-name">Айс Латте</div>
+                <div class="product-price">320 ₽</div>
+                <button class="add-btn" onclick="addToCart(320)">+</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/lemonade.png" alt="Лимонад">
+                <div class="product-name">Домашний лимонад</div>
+                <div class="product-price">240 ₽</div>
+                <button class="add-btn" onclick="addToCart(240)">+</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="cart-panel" id="cartPanel">
+        <div class="total-text">К оплате: <span id="totalSum">0</span> ₽</div>
+        <button class="pay-btn" onclick="confirmOrder()">Оплатить</button>
+    </div>
+</body>
+</html>

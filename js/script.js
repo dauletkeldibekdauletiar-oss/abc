@@ -45,16 +45,40 @@ function searchMenu() {
     }
 }
 function toggleCategory(element) {
-    // Переключаем класс 'active' для самого заголовка (для поворота стрелки)
+   
     element.classList.toggle("active");
     
-    // Находим следующий элемент (это наш .submenu)
+ 
     var submenu = element.nextElementSibling;
     
-    // Переключаем класс 'open' для раскрытия
+    
     if (submenu.classList.contains("open")) {
         submenu.classList.remove("open");
     } else {
         submenu.classList.add("open");
+    }
+}
+let totalAmount = 0;
+
+function addToCart(price) {
+    totalAmount += price;
+    document.getElementById('totalSum').innerText = totalAmount;
+    
+   
+    const panel = document.getElementById('cartPanel');
+    panel.style.background = '#ff00ff';
+    setTimeout(() => {
+        panel.style.background = '#d000ff';
+    }, 200);
+}
+
+function confirmOrder() {
+    if (totalAmount > 0) {
+        alert("Заказ оформлен! К оплате: " + totalAmount + " ₽");
+
+        totalAmount = 0;
+        document.getElementById('totalSum').innerText = totalAmount;
+    } else {
+        alert("Выберите напиток для заказа!");
     }
 }
