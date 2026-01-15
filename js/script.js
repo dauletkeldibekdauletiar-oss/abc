@@ -82,3 +82,17 @@ function confirmOrder() {
         alert("Выберите напиток для заказа!");
     }
 }
+
+let currDeg = 0;
+
+function rotateCarousel(direction) {
+    const ring = document.getElementById('carouselRing');
+    
+    if (direction === 'next') {
+        currDeg -= 60;
+    } else {
+        currDeg += 60;
+    }
+    
+    ring.style.transform = `rotateY(${currDeg}deg)`;
+}

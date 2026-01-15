@@ -50,21 +50,42 @@
         <h1>Тепло в чашке, радость в кусочке</h1>
     </header>
     <main class="main">
-      <div class="parent">
-<a href="shop.html" class="cofe">
-    <img src="images/cappuchino.png" alt="Капучино">
-    <p>Капучино</p>
-</a>
+        <div class="info-section">
+    <div class="info-content">
+        <h2>Наша атмосфера</h2>
+        <p>Мы создаем не просто кофе, а настроение. В каждом зерне — энергия неонового города и уют домашнего вечера. Попробуйте вкус, который вдохновляет.</p>
+    </div>
+    <div class="info-image">
+        <img src="images/cappuchino.png" alt="Интерьер">
+    </div>
+</div>
 
-<a href="shop.html" class="cofe">
-    <img src="images/latte.png" alt="Латте">
-    <p>Латте</p>
-</a>
+<div class="carousel-wrapper">
+    <h2>Галерея вкусов</h2>
+    <div class="carousel-container">
+        <div class="carousel-ring" id="carouselRing">
+            <div class="carousel-item" style="--i:1;"><img src="images/cappuchino.png"><span>Капучино</span></div>
+            <div class="carousel-item" style="--i:2;"><img src="images/latte.png"><span>Латте</span></div>
+            <div class="carousel-item" style="--i:3;"><img src="images/amerika.png"><span>Американо</span></div>
+            <div class="carousel-item" style="--i:4;"><img src="images/cappuchino.png"><span>Раф</span></div>
+            <div class="carousel-item" style="--i:5;"><img src="images/latte.png"><span>Мокачино</span></div>
+            <div class="carousel-item" style="--i:6;"><img src="images/amerika.png"><span>Эспрессо</span></div>
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button onclick="rotateCarousel('prev')">❮</button>
+        <button onclick="rotateCarousel('next')">❯</button>
+    </div>
+</div>
 
-<a href="shop.html" class="cofe">
-    <img src="images/amerika.png" alt="американо">
-    <p>Американо</p> 
-</a>
+<div class="info-section reverse">
+    <div class="info-content">
+        <h2>Магия приготовления</h2>
+        <p>Отборные зерна, профессиональные бариста и капля любви в каждой чашке. Мы используем только свежую обжарку и натуральное молоко для идеальной пенки.</p>
+    </div>
+    <div class="info-image">
+        <img src="images/latte.png" alt="Процесс">
+    </div>
 </div>
     </main>
     
@@ -74,7 +95,7 @@
             <ul class="footer-links">
                 <li><a href="kontakty.html">Контакты</a></li>
                 <li><a href="Politica.html">Политика конфиденциальности</a></li>
-                <li><a href="cosceti.html">Социальные сети</a></li>
+                <li><a href="about.html">О нас</a></li>
             </ul>
         </div>
     </footer> 
