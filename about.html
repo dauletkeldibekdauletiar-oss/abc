@@ -1,6 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | Cup & Cake</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div id="sidePanel" class="sidebar">
+    <span class="closebtn" onclick="toggleNav()">×</span>
+    <input type="text" id="sidebarSearch" class="sidebar-search" onkeyup="searchMenu()" placeholder="Поиск напитка...">
+    
+    <a href="index.html" class="home-link">🏠 Главная</a>
+
+    <div class="category-wrapper">
+        <div class="menu-category" onclick="toggleCategory(this)">☕ КОФЕ <span class="arrow">▼</span></div>
+        <div class="submenu">
+            <a href="shop.html">Капучино</a>
+            <a href="shop.html">Латте</a>
+            <a href="shop.html">Американо</a>
+            <a href="shop.html">Эспрессо</a>
+            <a href="shop.html">Флэт Уайт</a>
+            <a href="shop.html">Раф кофе</a>
+        </div>
+    </div>
+
+    <div class="category-wrapper">
+        <div class="menu-category" onclick="toggleCategory(this)">🍵 ЧАЙ И КАКАО <span class="arrow">▼</span></div>
+        <div class="submenu">
+            <a href="shop.html">Чай (черный/зеленый)</a>
+            <a href="shop.html">Фруктовый чай</a>
+            <a href="shop.html">Какао с маршмэллоу</a>
+        </div>
+    </div>
+
+    <div class="category-wrapper">
+        <div class="menu-category" onclick="toggleCategory(this)">🍹 ХОЛОДНОЕ <span class="arrow">▼</span></div>
+        <div class="submenu">
+            <a href="shop.html">Айс Латте</a>
+            <a href="shop.html">Бамблби кофе</a>
+            <a href="shop.html">Домашний лимонад</a>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <span class="open-menu" onclick="toggleNav()">☰</span>
+    <h1>История Cup & Cake</h1>
+</header>
+
 <main class="main">
     <section class="about-section">
         <div class="about-card">
+            <div style="margin-bottom: 20px;">
+                <a href="index.html" class="back-btn">❮ Вернуться на главную</a>
+            </div>
+
             <div class="about-header">
                 <h2>О нас</h2>
                 <div class="neon-line"></div>
@@ -8,28 +66,48 @@
             
             <div class="about-grid">
                 <div class="about-text">
-                    <p><strong>Cup & Cake</strong> — это не просто кофейня, это место, где неоновая эстетика встречается с домашним уютом. Мы начали свой путь в 2025 году как дипломный проект, который перерос в нечто большее.</p>
+                    <p><strong>Cup & Cake</strong> — это точка слияния технологий и вкуса. Мы верим, что идеальный кофе способен зарядить энергией лучше, чем самый мощный аккумулятор.</p>
+                    
+                    <p>Мы открылись в 2025 году как смелый дипломный проект, но любовь гостей превратила нас в культовое место. Здесь неоновая эстетика киберпанка встречается с теплом домашней выпечки, создавая уникальную атмосферу для отдыха и работы.</p>
                     
                     <div class="features">
                         <div class="feature-item">
                             <span>☕</span>
-                            <p>Лучшие зерна арабики</p>
+                            <p>Premium Арабика</p>
                         </div>
                         <div class="feature-item">
                             <span>🍰</span>
-                            <p>Десерты ручной работы</p>
+                            <p>Авторские десерты</p>
                         </div>
                         <div class="feature-item">
-                            <span>✨</span>
-                            <p>Атмосфера киберпанка</p>
+                            <span>💜</span>
+                            <p>Душевная команда</p>
+                        </div>
+                        <div class="feature-item">
+                            <span>⚡</span>
+                            <p>Быстрый Wi-Fi</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="about-image">
-                    <img src="images/latte.png" alt="Наша кофейня">
+                    <img src="images/cappuchino.png" alt="Атмосфера кофейни">
                 </div>
             </div>
         </div>
     </section>
 </main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Дипломный проект. Все права защищены.</p>
+        <ul class="footer-links">
+            <li><a href="kontakty.html">Контакты</a></li>
+            <li><a href="Politica.html">Политика конфиденциальности</a></li>
+            <li><a href="about.html">О нас</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
